@@ -10,7 +10,7 @@ CIP分层在基于连接的网络的顶部。一个CIP连接提供了多个应�
 如果连接涉及双向数据交换，则分配两个连接ID。
 参见Figure 2-1.1
 
-![Figure 2-1.1 Connections and Connection IDs](/figure/2-1.1_Connections_and_Connection_IDs.png)
+![Figure 2-1.1 Connections and Connection IDs](figure/2-1.1_Connections_and_Connection_IDs.png)
 
 ## 2-2 连接建立概述
 
@@ -23,14 +23,14 @@ CIP分层在基于连接的网络的顶部。一个CIP连接提供了多个应�
 
 当使用UCMM建立显式消息连接时，目标应用程序对象是消息路由器对象Message Router object（Class Code 2）。
 
-![Figure 2-2.1 Establishing an Explicit Messaging Connection](/figure/2-2.1_Establishing_an_Explicit_Messaging_Connection.png)
+![Figure 2-2.1 Establishing an Explicit Messaging Connection](figure/2-2.1_Establishing_an_Explicit_Messaging_Connection.png)
 
 显式消息连接是无条件的点对点连接（point-to-point）。
 点对点连接只存在于两个设备之间。
 请求打开连接的设备（客户端）是连接的一个端点，而接收并相应该请求的模块（服务器）是另一个端点。
 见Figure 2-2.2
 
-![Figure 2-2.2 PointtoPoint Nature of Explicit Messaging Connections](/figure/2-2.2_PointtoPoint_Nature_of_Explicit_Messaging_Connections.png)
+![Figure 2-2.2 PointtoPoint Nature of Explicit Messaging Connections](figure/2-2.2_PointtoPoint_Nature_of_Explicit_Messaging_Connections.png)
 
 ### 2-2.2 I/O连接
 CIP的网络定义允许建立各种I/O连接。
@@ -38,7 +38,7 @@ CIP的网络定义允许建立各种I/O连接。
 例如，一个工具可以与两个独立的设备连接，并在它们之间创建一个I/O连接。
 见Figure 2-2.3.
 
-![Figure 2-2.3 Tool Interface with Devices to Create Connection](/figure/2-2.3_Tool_Interface_with_Devices_to_Create_Connection.png)
+![Figure 2-2.3 Tool Interface with Devices to Create Connection](figure/2-2.3_Tool_Interface_with_Devices_to_Create_Connection.png)
 
 
 该工具使用各种显式消息服务来创建和配置端点内的I/O连接对象。
@@ -46,7 +46,7 @@ CIP的网络定义允许建立各种I/O连接。
 I/O连接可以是点对点或组播。组播允许多个节点在一次传输中都能收到数据。
 见Figure 2-2.4.
 
-![Figure 2-2.4 PointtoPoint or Multicast Nature of I/O Connections](/figure/2-2.4_PointtoPoint_or_Multicast_Nature_of_IO_Connections.png)
+![Figure 2-2.4 PointtoPoint or Multicast Nature of I/O Connections](figure/2-2.4_PointtoPoint_or_Multicast_Nature_of_IO_Connections.png)
 
 ## 2-3 客户端和服务器连接端点
 
@@ -55,7 +55,7 @@ I/O连接可以是点对点或组播。组播允许多个节点在一次传输�
 客户端是发起传输的模块，服务器是对该传输做出反应的模块。
 服务器的反应可能会导致它向客户端返回消息。
 
-![Figure 2-3.1 Illustration of Client/Server Message Flow](/figure/2-3.1_Illustration_of_Client_Server_Message_Flow.png)
+![Figure 2-3.1 Illustration of Client/Server Message Flow](figure/2-3.1_Illustration_of_Client_Server_Message_Flow.png)
 
 ## 2-4 消息路由器请求/响应格式
 
@@ -64,7 +64,7 @@ CIP定义了一种标准数据格式用于向消息路由器对象(see Chapter 5
 
 ### 2-4.1 消息路由器请求
 
-![Table 2-4.1 Message Router Request Format](/table/2-4.1_Message_Router_Request_Format.png)
+![Table 2-4.1 Message Router Request Format](table/2-4.1_Message_Router_Request_Format.png)
 
 表格2-4.1 消息路由器请求格式
 
@@ -98,7 +98,7 @@ Electronic Key字段指示目标设备必须兼容Vendor 0x4242, Device Type 0x0
 
 ### 2-4.2 消息路由器响应
 
-![Table 2-4.2 Message Router Response Format](/table/2-4.2_Message_Router_Response_Format.png)
+![Table 2-4.2 Message Router Response Format](table/2-4.2_Message_Router_Response_Format.png)
 
 表格2-4.2 消息路由器响应格式
 
