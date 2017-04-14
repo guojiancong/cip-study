@@ -21,7 +21,7 @@ CIP分层在基于连接的网络的顶部。一个CIP连接提供了多个应�
 未连接消息管理器（UCMM）负责处理未连接的显式请求和响应，包括显式消息和I/O连接的确定。
 底层的网络决定如何访问UCMM，同时可能会限制允许在UCMM上传递的消息。
 
-当使用UCMM建立显式消息连接时，目标应用程序对象是消息路由器对象Message Router object（Class Code 2）。
+当使用UCMM建立显式消息连接时，目标应用程序对象是消息路由器对象Message Router object（Class Code 0x02）。
 
 ![Figure 2-2.1 Establishing an Explicit Messaging Connection](figure/2-2.1_Establishing_an_Explicit_Messaging_Connection.png)
 
@@ -72,7 +72,7 @@ CIP定义了一种标准数据格式用于向消息路由器对象(see Chapter 5
 |------------------|---------|----------------------------------------|
 |Service           |USINT    |请求的服务代码                           |
 |Request_Path_Size |USINT    |Request_Path字段中以双字节(16位)计算的字数（下一个元素）|
-|Request_Path      |Padded EPATH |字节数值，表示在这次传输请求中的应用路径和其它信息|
+|Request_Path      |Padded EPATH |字节数组，表示在这次传输请求中的应用路径和其它信息|
 |Request_Data      |Array of octet|特定服务的数据，由每个在显示消息中传输的对象定义的。如果没有附加的数据需要传输，则这个数组为空|
 
 #### 2-4.1.1 Request_Path
